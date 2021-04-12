@@ -1,0 +1,127 @@
+.header-cont {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  padding-top: 20px;
+  position: fixed;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.header-link {
+  display: flex;
+  font-size: 32px;
+  line-height: 1.31;
+  color: #28a745;
+}
+
+.header-link__img {
+  margin-right: 5px;
+}
+
+.header-text {
+  color: $white-text-color;
+}
+
+.nav {
+  margin-top: 10px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list__link {
+  font-size: 16px;
+  line-height: 1.625;
+  color: $white-text-color;
+}
+
+.hero {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../../src/images/hero-mobile.png);
+  border-radius: 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 144px;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+.hero-title {
+  font-weight: 300;
+  font-size: 52px;
+  line-height: 1.269;
+  color: $hero-text-color;
+}
+
+.hero-description {
+  margin-top: 16px;
+  font-size: 22px;
+  line-height: 1.681;
+  color: $hero-text-color;
+  margin-bottom: 27px;
+}
+
+.hero-button {
+  width: 156px;
+  height: 45px;
+  text-align: center;
+  margin-bottom: 95px;
+  background-color: #28a745;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  line-height: 1.625;
+  color: $white-text-color;
+}
+
+@media screen and(min-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .nav-list {
+    width: 310px;
+  }
+  .hero {
+    padding-top: 410px;
+    padding-bottom: 412px;
+  }
+  .header-link {
+    font-size: 35px;
+  }
+  .nav-list__link {
+    font-size: 18px;
+  }
+  .hero-button {
+    font-size: 18px;
+    line-height: 1.555;
+    margin-bottom: 0;
+  }
+  .hero {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../../src/images/hero-tablet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and(min-width: 1360px) {
+  .hero {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../../src/images/hero-pc.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 279px;
+    padding-bottom: 284px;
+  }
+}

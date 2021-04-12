@@ -3,33 +3,282 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
-.example {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.5;
-  background-color: #fff;
-  color: #424242;
-  max-width: 960px;
-  padding: 16px;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
 }
 
-.example code {
-  font-family: monospace;
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: Open Sans, sans-serif;
+  color: #333333;
   font-size: 16px;
-  font-weight: 700;
-  background-color: #009688;
-  color: #fff;
-  padding: 2px 6px;
-  border-radius: 2px;
+  line-height: 1.625;
 }
 
-.example .background {
-  height: 240px;
-  background-image: url("../images/demo.jpg");
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .container {
+    width: 1360px;
+  }
+}
+
+.header-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header {
+  padding-top: 20px;
+  position: fixed;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.header-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 32px;
+  line-height: 1.31;
+  color: #28a745;
+}
+
+.header-link__img {
+  margin-right: 5px;
+}
+
+.header-text {
+  color: #ffffff;
+}
+
+.nav {
+  margin-top: 10px;
+}
+
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-list__link {
+  font-size: 16px;
+  line-height: 1.625;
+  color: #ffffff;
+}
+
+.hero {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../../src/images/hero-mobile.png);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../src/images/hero-mobile.png);
+  border-radius: 0px;
   background-size: cover;
-  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 144px;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
 }
 
-header {
-  background-color: yellow;
+.hero-title {
+  font-weight: 300;
+  font-size: 52px;
+  line-height: 1.269;
+  color: #e9e9e9;
+}
+
+.hero-description {
+  margin-top: 16px;
+  font-size: 22px;
+  line-height: 1.681;
+  color: #e9e9e9;
+  margin-bottom: 27px;
+}
+
+.hero-button {
+  width: 156px;
+  height: 45px;
+  text-align: center;
+  margin-bottom: 95px;
+  background-color: #28a745;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  line-height: 1.625;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .nav-list {
+    width: 310px;
+  }
+  .hero {
+    padding-top: 410px;
+    padding-bottom: 412px;
+  }
+  .header-link {
+    font-size: 35px;
+  }
+  .nav-list__link {
+    font-size: 18px;
+  }
+  .hero-button {
+    font-size: 18px;
+    line-height: 1.555;
+    margin-bottom: 0;
+  }
+  .hero {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../../src/images/hero-tablet.jpg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../src/images/hero-tablet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .hero {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../../src/images/hero-pc.jpg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../src/images/hero-pc.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 279px;
+    padding-bottom: 284px;
+  }
+}
+
+.features {
+  margin-top: 30px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.features-item {
+  margin-bottom: 18px;
+}
+
+.features-item::before {
+  display: block;
+  content: '';
+  height: 64px;
+  width: 64px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #28a745;
+  border-radius: 33.5px;
+  margin: 0 auto;
+}
+
+.features-title {
+  margin-bottom: 15px;
+  margin-top: 10px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.666;
+  color: #333333;
+}
+
+.features-description {
+  color: #333333;
+  font-size: 16px;
+  line-height: 1.625;
+}
+
+.bank-icon::before {
+  background-image: url(../../src/images/bank-icon.svg);
+}
+
+.book-icon::before {
+  background-image: url(../../src/images/book-icon.svg);
+}
+
+.penc-icon::before {
+  background-image: url(../../src/images/penc-icon.svg);
+}
+
+@media screen and (min-width: 768px) {
+  .features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .features-item {
+    width: 185px;
+  }
+  .features-title {
+    font-size: 20px;
+    line-height: 1.65;
+    width: 190px;
+  }
+  .features-description {
+    font-size: 18px;
+    line-height: 1.555;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .features-title {
+    width: 362px;
+  }
+  .features-item {
+    width: 362px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
