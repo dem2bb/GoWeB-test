@@ -1,0 +1,84 @@
+.cases {
+  margin-top: 50px;
+  margin-bottom: 38px;
+  text-align: center;
+}
+
+.cases-preview {
+  color: $primary-text-color;
+  width: 219px;
+  margin: 0 auto;
+  margin-bottom: 37px;
+  &__undertitle {
+    font-size: 18px;
+    line-height: 1.666;
+  }
+  &__title {
+    font-size: 38px;
+    font-weight: 300;
+    line-height: 1.263;
+    margin-bottom: 35px;
+    margin-top: 15px;
+  }
+  &__descr {
+    font-size: 18px;
+    line-height: 1.555;
+  }
+}
+
+.cases-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.cases-gallery__item {
+  margin-bottom: 7px;
+}
+.cases-gallery__item:hover {
+  opacity: 0.8;
+}
+
+.cases-gallery__img {
+  width: 264px;
+}
+
+@media screen and (min-width: 768px) {
+  .cases-preview {
+    width: auto;
+    &__undertitle {
+      font-size: 20px;
+      line-height: 1.65;
+    }
+    &__title {
+      font-size: 38px;
+      line-height: 1.263;
+    }
+  }
+
+  .cases-gallery {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 768px;
+  }
+  .cases-gallery__item {
+    margin-right: 8px;
+  }
+
+  .cases-gallery__img {
+    width: 172px;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .cases-gallery {
+    width: 1360px;
+    margin: 0 auto;
+  }
+  .cases-gallery__img {
+    width: 320px;
+  }
+}

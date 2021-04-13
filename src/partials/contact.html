@@ -1,0 +1,23 @@
+<section class="contact">
+  <picture>
+    <source srcset="../src/images/home/contact@2x.webp" media="(min-width: 1360px)" />
+    <source srcset="../src/images/home/contact@2x.jpg" media="(min-width: 1360px)" />
+    <source srcset="../src/images/home/contact.webp" media="(min-width: 320px)" />
+    <img class="contact-img" src="../src/images/home/contact.jpg" alt="contact" />
+  </picture>
+  <div class="form-cont">
+    <form class="contact-form" name="myform" method="POST" data-netlify="true">
+      <h3 class="contact-form__title">Request Callback</h3>
+      <input class="contact-form__input" type="name" placeholder="Enter your name" name="name" />
+      <input
+        class="contact-form__input email-input"
+        type="email"
+        required
+        placeholder="Enter email*"
+        name="email"
+      />
+      <div class="notify-cont"></div>
+    </form>
+    <button class="contact-form__button" type="submit">Send</button>
+  </div>
+</section>

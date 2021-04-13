@@ -1,0 +1,23 @@
+.footer {
+  background-color: #333333;
+  color: $white-text-color;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer-links {
+  width: 216px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 9px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-copyright__text {
+    font-size: 18px;
+    line-height: 1.555;
+  }
+}

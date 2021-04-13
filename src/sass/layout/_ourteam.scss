@@ -1,0 +1,121 @@
+.ourteam {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.ourteam-preview {
+  margin-bottom: 37px;
+
+  &__undertitle {
+    font-size: 18px;
+    line-height: 1.666;
+  }
+  &__title {
+    font-size: 38px;
+    font-weight: 300;
+    line-height: 1.263;
+    margin-top: 15px;
+    margin-bottom: 35px;
+  }
+}
+
+.ourteam-list__item {
+  margin-bottom: 10px;
+}
+
+.ourteam-list__title {
+  margin-top: 15px;
+  margin-bottom: 11px;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 1.26;
+}
+
+@media screen and (min-width: 768px) {
+  .ourteam-preview {
+    margin-bottom: 49px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__undertitle {
+      font-size: 20px;
+      line-height: 1.65;
+    }
+  }
+  .ourteam-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__item {
+      text-align: center;
+    }
+    &__img {
+      width: 223px;
+    }
+    &__title {
+      font-size: 25px;
+      line-height: 1.28;
+    }
+    &__descr {
+      font-size: 18px;
+      line-height: 1.555;
+    }
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .ourteam-preview__descr {
+    font-size: 18px;
+    line-height: 1.555;
+  }
+  .ourteam-list {
+    &__img {
+      width: 420px;
+    }
+  }
+
+  .ourteam-list__overlay {
+    position: relative;
+    transition: 0.3s;
+  }
+  .ourteam-list__overlay:hover:after {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 279.56px;
+    position: absolute;
+    content: '';
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.4);
+    border-radius: 0px;
+  }
+  .team-links {
+    width: 216px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  .ourteam-list__overlay:hover .team-links {
+    display: flex;
+    opacity: 0.9;
+    z-index: 1;
+  }
+  .ourteam-list__overlay:hover {
+    z-index: 2;
+    -webkit-transform: scale(1.07);
+    -ms-transform: scale(1.07);
+    transform: scale(1.07);
+  }
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Заголовок страницы</title>
+    <link href="../node_modules/lightbox2/dist/css/lightbox.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -20,8 +21,19 @@
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
     <include src="./partials/header.html"></include>
     <include src="./partials/features.html"></include>
+    <include src="./partials/aboutus.html"></include>
+    <include src="./partials/cases.html"></include>
+    <include src="./partials/blog.html"></include>
+    <include src="./partials/ourteam.html"></include>
+    <include src="./partials/contact.html"></include>
+    <include src="./partials/footer.html"></include>
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
+    <script src="https://kit.fontawesome.com/b110320d1a.js" crossorigin="anonymous"></script>
+    <script src="../node_modules/lightbox2/dist/js/lightbox-plus-jquery.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/form.js"></script>
   </body>
 </html>
